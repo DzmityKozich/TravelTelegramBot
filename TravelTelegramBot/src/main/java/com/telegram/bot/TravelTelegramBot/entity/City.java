@@ -18,7 +18,16 @@ public class City {
     @Column(name = "description")
     private String description;
 
+//    @ManyToOne
+//    @JoinColumn(name = "usr_id")
+//    private User user;
+
     public City() {
+    }
+
+    public City(String name, String description) {
+        this.name = name;
+        this.description = description;
     }
 
     public Long getId() {
@@ -45,29 +54,17 @@ public class City {
         this.description = description;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        City city = (City) o;
-        return id.equals(city.id) &&
-                name.equals(city.name) &&
-                description.equals(city.description);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, description);
-    }
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 
     @Override
     public String toString() {
         return name + "\n" + description;
     }
 
-//    "City{" +
-//            "id=" + id +
-//            ", name='" + name + '\'' +
-//            ", description='" + description + '\'' +
-//            '}';
 }
