@@ -35,3 +35,4 @@ The bot will then be registered for you automatically on startup.
 * [Spring](spring.io)
 * [Maven](https://maven.apache.org/)
 * [Telegram Spring Boot Starter](https://github.com/xabgesagtx/telegram-spring-boot-starter)
+* [MySql](https://www.mysql.com/)
